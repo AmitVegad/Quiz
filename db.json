@@ -1,0 +1,136 @@
+{
+  "quiz": [
+    {
+        "id":8,
+        "question":"What are two ways that data gets handled in React?",
+        "option":[
+            "State",
+            "Model",
+            "Props",
+            "components"
+        ],
+        "answer": [0,2],
+        "IsMultipleAns":true
+    },
+    {
+        "id":1,
+        "question":"What is a correct syntax to output \"Hello World\" in Java?",
+        "option":[
+            "print (\"Hello World\");",
+            "echo(\"Hello World\");",
+            "Console.WriteLine(\"Hello World\");",
+            "System.out.println(\"Hello World\");"
+        ],
+        "answer": 3,
+        "IsMultipleAns":false
+    },
+    {
+        "id":2,
+        "question":"Which HTML tag is used to define an internal style sheet?",
+        "option":[
+            "<style>",
+            "<script>",
+            "<headStyle>",
+            "<Style>"
+        ],
+        "answer": 0,
+        "IsMultipleAns":false
+    },
+    {
+        "id":3,
+        "question":"Where is the correct place to insert a JavaScript?",
+        "option":[
+            "The <head> section",
+            "The <body> section",
+            "Both the <head> section and the <body> section are correct",
+            "None of the above"
+        ],
+        "answer": 2,
+        "IsMultipleAns":false
+    },
+
+    {
+        "id":4,
+        "question":"What is the correct way to write a JavaScript array?",
+        "option":[
+            "var colors = [\"red\", \"green\", \"blue\"]",
+            "var colors = (1:\"red\", 2:\"green\", 3:\"blue\")",
+            "var colors = \"red\", \"green\", \"blue\"",
+            "var colors = 1 = (\"red\"), 2 = (\"green\"), 3 = (\"blue\")"
+        ],
+        "answer": 0,
+        "IsMultipleAns":false
+    },
+    {
+        "id":5,
+        "question":"Which event occurs when the user clicks on an HTML element?",
+        "option":[
+            "onmouseover",
+            "onmouseclick",
+            "onchange",
+            "onclick"
+        ],
+        "answer": 3,
+        "IsMultipleAns":false
+    },
+    {
+        "id":6,
+        "question":"What is used in ReactJs to increase performance",
+        "option":[
+            "Original DOM",
+            "Virtual DOM",
+            "Both",
+            "None of the above"
+        ],
+        "answer": 1,
+        "IsMultipleAns":false
+    },
+    {
+        "id":7,
+        "question":"What is the declarative way to render a dynamic list of components based on values in an array",
+        "option":[
+            "Using the reduce array method",
+            "Using the <Each /> component",
+            "Using the Array.map() method",
+            "With a for/while loop"
+        ],
+        "answer": 2,
+        "IsMultipleAns":false
+    },
+
+    {
+        "id":9,
+        "question":"Everything in react is ",
+        "option":[
+            "Component",
+            "Model",
+            "Method",
+            "Package"
+        ],
+        "answer": 0,
+        "IsMultipleAns":false
+    },
+    {
+        "id":10,
+        "question":"At the highest level, React components have lifecycle events that fall into",
+        "option":[
+            "Destruction",
+            "State/Property Updates",
+            "Initialization",
+            "None of the above"
+        ],
+        "answer": [0,1,2],
+        "IsMultipleAns":true
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

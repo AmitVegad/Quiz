@@ -1,38 +1,205 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  background-color: #edf2fb;
+}
+ .main{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.option{
+  /* list-style-type: none; */
+  padding: 0;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 75%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type=checkbox] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+  border:1px solid #adb5bd;
+  min-width: 500px;
+  border-radius:0.5rem;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  word-wrap: break-word;
+  background-color: #d7e3fc;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.1em solid #000;
+  border-radius: 1.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  /* margin-right: 0.2em; */
+  /* vertical-align: bottom; */
+  color: transparent;
+  transition: .2s;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen; 
+  color: #fff;
+}
+
+
+.Questions{
+  width: 60%;
+  height:200px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: #e2eafc;
+}
+
+.Questions p{
+  font-size:25px;
+  margin-left: 20px;
+  font-weight: 400;
+}
+
+.btn{
+  width: 200px;
+  height: 50px;
+  margin-top:40px;
+  border-radius:50px;
+  outline:none;
+  border: 1px solid grey;
+  cursor: pointer;
+  background-color:#e2eafc;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);;
+  font-size: 15px;
+}
+
+span,
+sup,
+b {
+  display: inline-block;
+  padding: 0 0.2em 0 0;
+  margin-left: 8px;
+}
+.PI {font-weight:bold;
+  font-family:cursive;
+  font-size: 25px;
+}
+
+b.bot:before {
+  content: '';
+  position: absolute;
+  height: 0.8em;
+  bottom: -5px;
+  margin-left: -5px;
+  border: solid 1px;
+  transform: rotate(
+15deg
+);
+  margin-bottom: 10px;
+}
+
+.bot {
+  padding: 0 0.2em;
+  font-size:20px;
+  vertical-align: -2px;
+  position: relative;
+  margin-left: 2px;
+}
+.question-number{
+  border: 1px solid grey;
+  padding:5px;
+  border-radius:5px;
+}
+
+.question-heading{
+  font-size:20px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+
+.result{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:#edf2fb;
+  
+}
+
+
+.resultbox{
+  border: 1px solid gray;
+  border-radius:20px;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);;
+}
+
+.top-heading{
+  margin-top:10%;
+}
+
+.top-heading-para{
+  margin-top:10%;
+}
+
+.scoreboard{
+  margin-top:15%;
+}
+
+.restart{
+  margin-top:20%;
+  background-color:#e2eafc;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);;
+  font-size: 15px;
+}
+
+.home-main-div{
+  background-color:#edf2fb;
+  height:100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.home-heading{
+  margin-top: 20%;
+  font-size:60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.home-btn{
+  background-color:#e2eafc;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);;
+  font-size: 15px;
+  width: 300px;
 }
